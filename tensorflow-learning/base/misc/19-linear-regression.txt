@@ -1,0 +1,9 @@
+使用Tensorflow实现线性回归
+
+1、导入必要的库，加载数据
+2、定义Learning Ratet，Placeholder
+3、定义线性模型: y = Ax + b
+4、选择损失函数
+5、训练
+6、预测
+
