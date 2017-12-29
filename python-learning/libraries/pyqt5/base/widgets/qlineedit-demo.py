@@ -14,7 +14,9 @@ class Form(QDialog):
         lineEdit.setStyleSheet("background:yellow;")
         layout = QHBoxLayout()
         layout.addWidget(lineEdit)
-
+        label = QLabel()
+        layout.addWidget(label)
+        lineEdit.textChanged.connect(label.setText)
         self.setLayout(layout)
 
 if __name__ == '__main__':

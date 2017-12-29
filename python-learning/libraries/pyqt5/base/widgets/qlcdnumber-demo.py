@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-QDateEdit控件
+QLCDNumber控件
 '''
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
@@ -11,14 +11,16 @@ class Form(QDialog):
     def __init__(self,parent=None):
         super().__init__(parent)
         
-        date1 = QDate(2017,10,1)
-        date2 = QDate.currentDate()
-        dateEdit1 = QDateEdit(date1)
+        lcd1 = QLCDNumber(2)
+        lcd1.display("24")
+        lcd2 = QLCDNumber(5)
+        lcd2.display("10:30")
         
         layout = QHBoxLayout()
-        layout.addWidget(dateEdit1)
-
+        layout.addWidget(lcd1)
+        layout.addWidget(lcd2)
         self.setLayout(layout)
+        self.resize(640,480)
 
 if __name__ == '__main__':
      

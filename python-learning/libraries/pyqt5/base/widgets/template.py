@@ -1,24 +1,25 @@
 # -*- coding: utf-8 -*-
 '''
-QDateEdit控件
+控件
 '''
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 import sys
 
-class Form(QDialog):
+class Form(QMainWindow):
     def __init__(self,parent=None):
         super().__init__(parent)
-        
-        date1 = QDate(2017,10,1)
-        date2 = QDate.currentDate()
-        dateEdit1 = QDateEdit(date1)
-        
+        centerWidget = QWidget()
         layout = QHBoxLayout()
-        layout.addWidget(dateEdit1)
+        
+        # 添加控件代码
 
-        self.setLayout(layout)
+
+        centerWidget.setLayout(layout)
+        self.setCentralWidget(centerWidget)
+        self.resize(640,480)
+        self.setWindowTitle("PyQt5-")
 
 if __name__ == '__main__':
      
