@@ -9,8 +9,8 @@ mnist = input_data.read_data_sets("temp/mnist", one_hot=True)
 
 # 定义网络的超参数
 learning_rate = 0.001 # 学习速率
-train_iters = 1000 # 训练迭代次数
-batch_size = 16
+train_iters = 20000 # 训练迭代次数
+batch_size = 64
 display_step = 10
 
 # 定义网络的参数
@@ -149,5 +149,6 @@ if __name__ == '__main__':
 
             step += 1
             print('training step:',step)
-
+        loss,acc = sess.run([cost,accuracy],feed_dict={x:batch_x,y:batch_y,keep_prob:dropout})
+        print('Iter '+str(step*batch_size) + " ,Minibatch Loss = " + "{:.6f}".format(loss)+",Accuracy="+"{:.5f}".format(acc))
         print('finished')
