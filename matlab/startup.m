@@ -1,1 +1,0 @@
-slCharacterEncoding('UTF-8')
