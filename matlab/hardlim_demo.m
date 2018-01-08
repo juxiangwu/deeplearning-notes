@@ -1,10 +1,10 @@
-% ä½¿ç”¨hardlimå‡½æ•°è®­ç»ƒæ„ŸçŸ¥å™¨ç½‘ç»œ
-% å®ç°â€˜æˆ–â€™é—¨ 
+% Ê¹ÓÃhardlimº¯ÊıÑµÁ·¸ĞÖªÆ÷ÍøÂç
+% ÊµÏÖ¡®»ò¡¯ÃÅ 
 clear all;clc;
 
-% æœŸæœ›è¯¯å·®å€¼
+% ÆÚÍûÎó²îÖµ
 err_goal = 0.0015;
-% æœ€å¤§è¿­ä»£æ¬¡æ•°
+% ×î´óµü´ú´ÎÊı
 max_epoch = 5000;
 
 X = [0 0 1 1;0 1 1 0];
@@ -27,7 +27,7 @@ for epoch = 1 : max_epoch
     Wij = Wij + E * X';
     b1 = b1 + E;
 end
-
+X1 = X
 epoch,Wij
-net = netwum(Wij * X1,b1);
+net = netsum(Wij * X1,b1);
 y = hardlim(net)
