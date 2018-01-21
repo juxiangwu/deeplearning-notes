@@ -125,7 +125,7 @@ if __name__ == '__main__':
     pred = alex_net(x,weights,biases,keep_prob)
 
     # 定义损失函数和优化器
-    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits=pred, labels=y))
+    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=pred, labels=y))
     optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
     # 评估函数
