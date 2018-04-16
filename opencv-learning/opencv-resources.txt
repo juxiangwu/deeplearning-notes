@@ -1,0 +1,15 @@
+0x00:关于OpenCV的博客
+https://blog.csdn.net/zouxy09
+https://blog.csdn.net/qq_16949707
+
+1、Gabor滤波器
+https://blog.csdn.net/xue_wenyuan/article/details/51533953
+https://blog.csdn.net/lhanchao/article/details/55006663
+https://blog.csdn.net/xiaowei_cqu/article/details/24745945
+https://www.jianshu.com/p/3f294b923826
+
+2、图像卷积
+https://blog.csdn.net/zouxy09/article/details/49080029
+
+3、图像哈希算法
+https://blog.csdn.net/insthink/article/details/51366571

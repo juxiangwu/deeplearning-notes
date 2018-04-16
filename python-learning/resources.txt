@@ -1,0 +1,2 @@
+0x01、MPI多核并行处理
+https://blog.csdn.net/zouxy09/article/details/49080029
