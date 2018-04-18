@@ -13,3 +13,9 @@ https://blog.csdn.net/zouxy09/article/details/49080029
 
 3、图像哈希算法
 https://blog.csdn.net/insthink/article/details/51366571
+
+4、脸部识别
+https://blog.csdn.net/GraceDD/article/details/51382952
+
+5、几何变换
+https://blog.csdn.net/a352611/article/details/51418178
