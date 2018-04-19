@@ -1,7 +1,8 @@
-0x00:关于OpenCV的博客
+0x00:关于OpenCV的博客网站
 https://blog.csdn.net/zouxy09
 https://blog.csdn.net/qq_16949707
 https://www.cnblogs.com/jsxyhelu/p/7008525.html
+http://www.elecfans.com/zhuanti/opencv.html
 
 1、Gabor滤波器
 https://blog.csdn.net/xue_wenyuan/article/details/51533953
@@ -24,3 +25,12 @@ https://blog.csdn.net/a352611/article/details/51418178
 6、颜色空间
 颜色量化：https://blog.csdn.net/mingtian715/article/details/54426453
 图像主颜色：https://blog.csdn.net/shanglianlm/article/details/50051269
+
+7、图像相似
+dHash算法：https://blog.csdn.net/haluoluo211/article/details/52769325
+           http://www.jianshu.com/p/193f0089b7a2
+           https://github.com/hjaurum/DHash
+           http://www.jb51.net/article/83315.htm
+
+8、视觉几何
+https://blog.csdn.net/fk1174/article/details/51815620
