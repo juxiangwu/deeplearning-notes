@@ -6,7 +6,7 @@
 import cv2
 import numpy as np
 
-src = cv2.imread('datas/l1.jpg')
+src = cv2.imread('datas/images/f1.jpg')
 dst = np.zeros_like(src)
 
 rows,cols,_ = src.shape
