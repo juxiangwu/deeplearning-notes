@@ -3,6 +3,7 @@ https://blog.csdn.net/zouxy09
 https://blog.csdn.net/qq_16949707
 https://www.cnblogs.com/jsxyhelu/p/7008525.html
 http://www.elecfans.com/zhuanti/opencv.html
+http://aishack.in/
 
 1、Gabor滤波器
 https://blog.csdn.net/xue_wenyuan/article/details/51533953
