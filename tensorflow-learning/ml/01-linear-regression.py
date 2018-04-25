@@ -1,6 +1,6 @@
 #coding:utf-8
 '''
-线性回归
+????
 '''
 
 import numpy as np
