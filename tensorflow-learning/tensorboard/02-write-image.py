@@ -1,7 +1,7 @@
 #coding:utf-8
 
 '''
-日志
+??Scalar
 '''
 
 import tensorflow as tf
@@ -18,15 +18,15 @@ update_avg = alpha * curr_value + (1 - alpha) * pre_avg
 avg_hist = tf.summary.scalar('running_average',update_avg)
 value_hist = tf.summary.scalar('incomming_values',curr_value)
 merged = tf.summary.merge_all() 
-writer = tf.summary.FileWriter('D:/Develop/DeepLearning/tensorboard')
+writer = tf.summary.FileWriter('D:/Develop/DL/deeplearning-notes/logs')
 
-init_opt = tf.global_varials_initializer()
+init_opt = tf.global_variables_initializer()
 
 with tf.Session() as sess:
     sess.run(init_opt)
-    sess.add_graph(sess.graph)
+    
     for i in range(len(raw_data)):
         summary_str,curr_avg = sess.run([merged,update_avg],
                 feed_dict = {curr_value:raw_data[i]})
-        sess.run(tf.assign(prev_avg, curr_avg))
-        writer.add+summary(summary_str,i)
+        sess.run(tf.assign(pre_avg, curr_avg))
+        writer.add_summary(summary_str,i)
