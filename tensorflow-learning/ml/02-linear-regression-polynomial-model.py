@@ -7,6 +7,14 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
+# 定义模型
+def model(X,w):
+    terms = []
+    for i in range(num_coeffs):
+        term = tf.multiply(w[i],tf.pow(X,i))
+        terms.append(term)
+    return tf.add_n(terms)
+
 # 学习速率
 learning_rate = 0.01
 
@@ -30,13 +38,6 @@ train_Y += np.random.randn(*train_X.shape) * 1.5
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
-def model(X,w):
-    terms = []
-    for i in range(num_coeffs):
-        term = tf.multiply(w[i],tf.pow(X,i))
-        terms.append(term)
-    return tf.add_n(terms)
-
 w = tf.Variable([0.] * num_coeffs,name='parameters')
 y_model = model(X,w)
 
@@ -48,6 +49,7 @@ init_op = tf.global_variables_initializer()
 
 sess.run(init_op)
 
+# 训练
 for epoch in range(training_epochs): 
     for (x, y) in zip(train_X, train_Y): 
         sess.run(train_op, feed_dict={X: x, Y: y})

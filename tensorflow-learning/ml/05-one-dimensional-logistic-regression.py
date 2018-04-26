@@ -21,7 +21,9 @@ plt.scatter(xs, ys)
 X = tf.placeholder(tf.float32, shape=(None,), name="x") 
 Y = tf.placeholder(tf.float32, shape=(None,), name="y")
 w = tf.Variable([0., 0.], name="parameter", trainable=True)
+
 y_model = tf.sigmoid(w[1] * X + w[0]) 
+
 cost = tf.reduce_mean(-Y * tf.log(y_model) - (1 - Y) * tf.log(1 - y_model))
 train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost) 
 

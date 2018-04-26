@@ -10,7 +10,7 @@ b_np = np.random.rand(10).astype(np.float32)
 ctx = cl.create_some_context()
 queue = cl.CommandQueue(ctx)
 
-mf = cl.mem_flags0
+mf = cl.mem_flags
 a_g = cl.Buffer(ctx, mf.READ_ONLY | mf.COPY_HOST_PTR, hostbuf=a_np)
 b_g = cl.Buffer(ctx, mf.READ_ONLY | mf.COPY_HOST_PTR, hostbuf=b_np)
 
