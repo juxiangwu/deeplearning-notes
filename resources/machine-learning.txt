@@ -1,0 +1,6 @@
+机器学习相关网站
+https://www.52ml.net/
+
+书籍
+http://blog.jobbole.com/111360/
+https://github.com/norvig/paip-lisp
