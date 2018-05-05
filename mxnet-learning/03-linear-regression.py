@@ -46,7 +46,7 @@ def square_loss(yhat,y):
     return(yhat - y.reshape(yhat.shape)) ** 2
 
 # 优化器
-def SDG(params,lr):
+def SGD(params,lr):
     for param in params:
         param[:] = param - lr * param.grad
 
@@ -87,7 +87,7 @@ for e in range(epochs):
             output = net(data)
             loss = square_loss(output,label)
         loss.backward()
-        SDG(params,learning_rate)
+        SGD(params,learning_rate)
         total_loss += nd.sum(loss).asscalar()
 
         # 记录每一次数据点后，损失的移动平均值变化
